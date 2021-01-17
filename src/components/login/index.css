@@ -1,0 +1,14 @@
+.dropdown{
+    
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 24px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
