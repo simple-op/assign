@@ -1,0 +1,132 @@
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.infoContainer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(7, 6, 6, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.cross{
+    position: absolute;
+    right: 0px;
+    
+    font-weight: bold;
+    color: dodgerblue;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    background-color: white;
+    
+    padding: 0 50px;
+    box-shadow: 0 0 10px 0 dodgerblue;
+    overflow:auto;
+}
+h2{
+    text-align: center;
+}
+
+h3{
+    border-bottom: solid rgb(30, 144, 255,0.5) 0.1px;
+    padding-bottom:10px ;
+}
+
+.progress{
+    height: 30px;
+    color: white;
+    width: 30px;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:0 0 5px 0.2px gray ;
+    margin: 1rem 0;
+    cursor: pointer;
+   }
+
+.container>div,.container>button{
+    margin:1rem ;
+    display:flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    overflow:auto;
+}
+@keyframes Fade{
+    from{
+      right:-200px;
+    }
+
+
+  
+    to{
+      right:0px;
+    }
+
+}
+
+.error{
+    position:fixed;
+    top: 100px;
+    right:0px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    animation: Fade 1s;
+    width: max-content;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+a{
+    color: dodgerblue;
+    
+}
