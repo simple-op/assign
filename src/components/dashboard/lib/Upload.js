@@ -19,7 +19,7 @@ function Upload({assignments,setAssignments,id,assignmentsSubmitted,setAssignmen
     function uploadSubmission(){
         setLoader(true);
         Axios({
-          url:"http://localhost:8000/uploadSubmission",
+          url:"https://assign-backend.herokuapp.com/uploadSubmission",
           method:"post",
           headers:{
               Authorization:"Bearer "+token
@@ -53,7 +53,7 @@ function Upload({assignments,setAssignments,id,assignmentsSubmitted,setAssignmen
       
        
         Axios({
-            url:"http://localhost:8000/uploadAssignment",
+            url:"https://assign-backend.herokuapp.com/uploadAssignment",
             method:"post",
             data:{
                  name:name,
@@ -84,7 +84,7 @@ function Upload({assignments,setAssignments,id,assignmentsSubmitted,setAssignmen
         const form=new FormData();
         form.append("avatar",e.target.files[0],e.target.files[0].name);
         Axios({
-            url:"http://localhost:8000/upload",
+            url:"https://assign-backend.herokuapp.com/upload",
             method:"post",
             data:form,
             headers:{

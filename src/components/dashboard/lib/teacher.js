@@ -25,7 +25,7 @@ function Teacher() {
 
   useEffect(() => {
     Axios({
-      url: "http://localhost:8000/",
+      url: "https://assign-backend.herokuapp.com/",
       method: "get",
       headers: {
         Authorization: "Bearer " + token,

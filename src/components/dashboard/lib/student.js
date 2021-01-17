@@ -11,7 +11,7 @@ function Student() {
 
     useEffect(() => {
         Axios({
-            url:"http://localhost:8000/?email=neetu123@gmail.com",
+            url:"https://assign-backend.herokuapp.com/?email=neetu123@gmail.com",
             method:"get",
             headers:{
                 Authorization:"Bearer "+token

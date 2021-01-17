@@ -76,7 +76,7 @@ class index extends Component {
         });
         axios({
             method:"post",
-            url:"http://localhost:8000/signup",
+            url:"https://assign-backend.herokuapp.com/signup",
             data:data,
            headers:{ 'Content-Type': 'application/json'    }  
         }).then((res)=>{

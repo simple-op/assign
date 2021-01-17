@@ -17,7 +17,7 @@ function Info({id,setInfo,name,link,givenOn}) {
   function handleGrade(e,id,email){
     var config = {
       method: 'post',
-      url: `http://localhost:8000/grade`,
+      url: `https://assign-backend.herokuapp.com/grade`,
       headers: { 
         'Authorization': ""
       },
@@ -60,7 +60,7 @@ useEffect(() => {
 
 var config = {
   method: 'get',
-  url: `http://localhost:8000/assignment?email=neetu123@gmail.com&id=${id}`,
+  url: `https://assign-backend.herokuapp.com/assignment?email=neetu123@gmail.com&id=${id}`,
   headers: { 
     'Authorization': ""
   }
